@@ -12,7 +12,7 @@ The dev.fun Stats API provides comprehensive statistics about the dev.fun platfo
 ## Base URL
 
 ```
-https://b-app.dev.fun/api/stats/
+https://app.dev.fun/api/stats/
 ```
 
 ## Endpoints
