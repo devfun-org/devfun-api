@@ -12,7 +12,7 @@ The dev.fun Stats API provides comprehensive statistics about the dev.fun platfo
 ## Base URL
 
 ```
-https://app.dev.fun/api/stats/
+https://dev.fun/api/stats/
 ```
 
 ## Endpoints
@@ -30,7 +30,7 @@ https://app.dev.fun/api/stats/
 > Returns aggregated statistics about developers on the platform
 
 ```http
-https://app.dev.fun/api/stats/devs
+https://dev.fun/api/stats/devs
 ```
 
 **Response**
@@ -46,7 +46,7 @@ https://app.dev.fun/api/stats/devs
 > Returns detailed information about a specific developer
 
 ```http
-https://app.dev.fun/api/stats/devs/:uniqueId
+https://dev.fun/api/stats/devs/:uniqueId
 ```
 
 | Parameter | Type | Description |
@@ -88,7 +88,7 @@ https://app.dev.fun/api/stats/devs/:uniqueId
 > Returns a paginated list of developers on the platform
 
 ```http
-https://app.dev.fun/api/stats/devs/list?page=1?limit=20
+https://dev.fun/api/stats/devs/list?page=1?limit=20
 ```
 
 | Parameter | Type | Default | Description |
@@ -126,7 +126,7 @@ https://app.dev.fun/api/stats/devs/list?page=1?limit=20
 > Returns aggregated statistics about apps on the platform
 
 ```http
-https://app.dev.fun/api/stats/apps
+https://dev.fun/api/stats/apps
 ```
 
 **Response**
@@ -146,7 +146,7 @@ https://app.dev.fun/api/stats/apps
 > Returns a paginated list of apps
 
 ```http
-https://app.dev.fun/api/stats/apps/list
+https://dev.fun/api/stats/apps/list
 ```
 
 | Parameter | Type | Default | Description |
@@ -184,7 +184,7 @@ https://app.dev.fun/api/stats/apps/list
 > Returns details about a specific app
 
 ```http
-https://app.dev.fun/api/stats/apps/:appId
+https://dev.fun/api/stats/apps/:appId
 ```
 
 | Parameter | Type | Description |
@@ -209,7 +209,7 @@ https://app.dev.fun/api/stats/apps/:appId
 > Returns apps created on a specific date
 
 ```http
-https://app.dev.fun/api/stats/apps/by-date/:creationDate
+https://dev.fun/api/stats/apps/by-date/:creationDate
 ```
 
 | Parameter | Type | Format | Description |
@@ -245,7 +245,7 @@ https://app.dev.fun/api/stats/apps/by-date/:creationDate
 > Returns apps created by a specific developer
 
 ```http
-https://app.dev.fun/api/stats/apps/by-dev/:walletAddress
+https://dev.fun/api/stats/apps/by-dev/:walletAddress
 ```
 
 | Parameter | Type | Description |
@@ -289,7 +289,7 @@ https://app.dev.fun/api/stats/apps/by-dev/:walletAddress
 > Returns overall statistics about coins/tokens on the platform
 
 ```http
-https://app.dev.fun/api/stats/coins
+https://dev.fun/api/stats/coins
 ```
 
 **Response**
@@ -304,7 +304,7 @@ https://app.dev.fun/api/stats/coins
 > Returns a paginated list of coins/tokens
 
 ```http
-https://app.dev.fun/api/stats/coins/list
+https://dev.fun/api/stats/coins/list
 ```
 
 | Parameter | Type | Default | Description |
@@ -342,7 +342,7 @@ https://app.dev.fun/api/stats/coins/list
 > Returns details about a specific coin/token
 
 ```http
-https://app.dev.fun/api/stats/coin/:contractAddress
+https://dev.fun/api/stats/coin/:contractAddress
 ```
 
 | Parameter | Type | Description |
@@ -372,7 +372,7 @@ https://app.dev.fun/api/stats/coin/:contractAddress
 > Returns apps associated with a specific coin/token
 
 ```http
-https://app.dev.fun/api/stats/apps/by-coin/:contractAddress
+https://dev.fun/api/stats/apps/by-coin/:contractAddress
 ```
 
 | Parameter | Type | Description |
@@ -416,7 +416,7 @@ https://app.dev.fun/api/stats/apps/by-coin/:contractAddress
 > Returns statistics about commits on the platform
 
 ```http
-https://app.dev.fun/api/stats/commits
+https://dev.fun/api/stats/commits
 ```
 
 **Response**
@@ -431,7 +431,7 @@ https://app.dev.fun/api/stats/commits
 > Returns a list of trending coins based on recent activity
 
 ```http
-https://app.dev.fun/api/stats/trending-coins
+https://dev.fun/api/stats/trending-coins
 ```
 
 **Response**
@@ -452,7 +452,7 @@ https://app.dev.fun/api/stats/trending-coins
 > Returns a list of crowned apps and their developers
 
 ```http
-https://app.dev.fun/api/stats/lord-of-dev
+https://dev.fun/api/stats/lord-of-dev
 ```
 
 **Response**
@@ -492,7 +492,7 @@ All endpoints return standard HTTP status codes:
 
 ```javascript
 // Example using fetch
-fetch('https://app.dev.fun/api/stats/apps')
+fetch('https://dev.fun/api/stats/apps')
   .then(response => response.json())
   .then(data => console.log(data))
   .catch(error => console.error('Error:', error));
@@ -500,7 +500,7 @@ fetch('https://app.dev.fun/api/stats/apps')
 
 ```bash
 # Example using curl
-curl -X GET https://app.dev.fun/api/stats/devs
+curl -X GET https://dev.fun/api/stats/devs
 ```
 
 ---
