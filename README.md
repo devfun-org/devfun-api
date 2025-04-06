@@ -146,7 +146,7 @@ https://dev.fun/api/stats/apps
 > Returns a paginated list of apps
 
 ```http
-https://dev.fun/api/stats/apps/list
+https://dev.fun/api/stats/apps/list?page=1?limit=20
 ```
 
 | Parameter | Type | Default | Description |
@@ -160,7 +160,7 @@ https://dev.fun/api/stats/apps/list
   "apps": [
     {
       "app_id": "app_id",
-      "app_name": "Amazing App",
+      "app_name": "App Name",
       "dev_wallet": "solana_wallet_address",
       "runs": 100,
       "forks": 20,
@@ -171,7 +171,8 @@ https://dev.fun/api/stats/apps/list
       "description": "App description...",
       "dev_username": "johndoe",
       "dev_avatar": "https://avatar-url.com/img.png",
-      "token_symbol": "TOKEN"
+      "token_symbol": "TOKEN",
+      "snapshot": "https://app.dev.fun/snapshots/app_id.png"
     }
   ],
   "page": 1,
@@ -184,7 +185,7 @@ https://dev.fun/api/stats/apps/list
 > Returns details about a specific app
 
 ```http
-https://dev.fun/api/stats/apps/:appId
+https://dev.fun/api/stats/app/:appId
 ```
 
 | Parameter | Type | Description |
@@ -201,7 +202,8 @@ https://dev.fun/api/stats/apps/:appId
   "runs": 1000,
   "commits": 50,
   "forks": 20,
-  "likes": 100
+  "likes": 100,
+  "snapshot": "https://app.dev.fun/snapshots/app123.png"
 }
 ```
 
@@ -234,7 +236,8 @@ https://dev.fun/api/stats/apps/by-date/:creationDate
       "description": "App description...",
       "dev_username": "johndoe",
       "dev_avatar": "https://avatar-url.com/img.png",
-      "token_symbol": "TOKEN"
+      "token_symbol": "TOKEN",
+      "snapshot": "https://app.dev.fun/snapshots/app_id.png"
     }
   ],
   "total": 10
@@ -274,7 +277,8 @@ https://dev.fun/api/stats/apps/by-dev/:walletAddress
       "description": "App description...",
       "dev_username": "johndoe",
       "dev_avatar": "https://avatar-url.com/img.png",
-      "token_symbol": "TOKEN"
+      "token_symbol": "TOKEN",
+      "snapshot": "https://app.dev.fun/snapshots/app_id.png"
     }
   ],
   "total": 5
@@ -304,7 +308,7 @@ https://dev.fun/api/stats/coins
 > Returns a paginated list of coins/tokens
 
 ```http
-https://dev.fun/api/stats/coins/list
+https://dev.fun/api/stats/coins/list?page=1?limit=20
 ```
 
 | Parameter | Type | Default | Description |
@@ -401,7 +405,8 @@ https://dev.fun/api/stats/apps/by-coin/:contractAddress
       "description": "App description...",
       "dev_username": "johndoe",
       "dev_avatar": "https://avatar-url.com/img.png",
-      "token_symbol": "TOKEN"
+      "token_symbol": "TOKEN",
+      "snapshot": "https://app.dev.fun/snapshots/app_id.png"
     }
   ],
   "total": 20
