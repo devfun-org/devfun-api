@@ -1,4 +1,4 @@
-# DevFun Stats API
+# dev.fun Stats API
 
 <div align="center">
   <img src="https://img.shields.io/badge/Status-Live-brightgreen" alt="Status: Live">
@@ -7,12 +7,12 @@
 
 ## Overview
 
-The DevFun Stats API provides comprehensive statistics about the DevFun platform, including developers, apps, tokens, and activity metrics. This API is publicly available for all users.
+The dev.fun Stats API provides comprehensive statistics about the dev.fun platform, including developers, apps, tokens, and activity metrics. This API is publicly available for all users.
 
 ## Base URL
 
 ```
-https://api.dev.fun/stats
+https://b-app.dev.fun/api/stats/
 ```
 
 ## Endpoints
@@ -30,7 +30,7 @@ https://api.dev.fun/stats
 > Returns aggregated statistics about developers on the platform
 
 ```http
-GET /devs
+https://app.dev.fun/api/stats/devs
 ```
 
 **Response**
@@ -46,7 +46,7 @@ GET /devs
 > Returns detailed information about a specific developer
 
 ```http
-GET /devs/:uniqueId
+https://app.dev.fun/api/stats/devs/:uniqueId
 ```
 
 | Parameter | Type | Description |
@@ -88,7 +88,7 @@ GET /devs/:uniqueId
 > Returns a paginated list of developers on the platform
 
 ```http
-GET /devs/list
+https://b-app.dev.fun/api/stats/devs/list?page=1?limit=20
 ```
 
 | Parameter | Type | Default | Description |
@@ -126,7 +126,7 @@ GET /devs/list
 > Returns aggregated statistics about apps on the platform
 
 ```http
-GET /apps
+https://app.dev.fun/api/stats/apps
 ```
 
 **Response**
@@ -146,7 +146,7 @@ GET /apps
 > Returns a paginated list of apps
 
 ```http
-GET /apps/list
+https://app.dev.fun/api/stats/apps/list
 ```
 
 | Parameter | Type | Default | Description |
@@ -184,7 +184,7 @@ GET /apps/list
 > Returns details about a specific app
 
 ```http
-GET /apps/:appId
+https://app.dev.fun/api/stats/apps/:appId
 ```
 
 | Parameter | Type | Description |
@@ -209,7 +209,7 @@ GET /apps/:appId
 > Returns apps created on a specific date
 
 ```http
-GET /apps/by-date/:creationDate
+https://app.dev.fun/api/stats/apps/by-date/:creationDate
 ```
 
 | Parameter | Type | Format | Description |
@@ -245,7 +245,7 @@ GET /apps/by-date/:creationDate
 > Returns apps created by a specific developer
 
 ```http
-GET /apps/by-dev/:walletAddress
+https://app.dev.fun/api/stats/apps/by-dev/:walletAddress
 ```
 
 | Parameter | Type | Description |
@@ -289,7 +289,7 @@ GET /apps/by-dev/:walletAddress
 > Returns overall statistics about coins/tokens on the platform
 
 ```http
-GET /coins
+https://app.dev.fun/api/stats/coins
 ```
 
 **Response**
@@ -304,7 +304,7 @@ GET /coins
 > Returns a paginated list of coins/tokens
 
 ```http
-GET /coins/list
+https://app.dev.fun/api/stats/coins/list
 ```
 
 | Parameter | Type | Default | Description |
@@ -342,7 +342,7 @@ GET /coins/list
 > Returns details about a specific coin/token
 
 ```http
-GET /coin/:contractAddress
+https://app.dev.fun/api/stats/coin/:contractAddress
 ```
 
 | Parameter | Type | Description |
@@ -372,7 +372,7 @@ GET /coin/:contractAddress
 > Returns apps associated with a specific coin/token
 
 ```http
-GET /apps/by-coin/:contractAddress
+https://app.dev.fun/api/stats/apps/by-coin/:contractAddress
 ```
 
 | Parameter | Type | Description |
@@ -416,7 +416,7 @@ GET /apps/by-coin/:contractAddress
 > Returns statistics about commits on the platform
 
 ```http
-GET /commits
+https://app.dev.fun/api/stats/commits
 ```
 
 **Response**
@@ -431,7 +431,7 @@ GET /commits
 > Returns a list of trending coins based on recent activity
 
 ```http
-GET /trending-coins
+https://app.dev.fun/api/stats/trending-coins
 ```
 
 **Response**
@@ -452,7 +452,7 @@ GET /trending-coins
 > Returns a list of crowned apps and their developers
 
 ```http
-GET /lord-of-dev
+https://app.dev.fun/api/stats/lord-of-dev
 ```
 
 **Response**
@@ -492,7 +492,7 @@ All endpoints return standard HTTP status codes:
 
 ```javascript
 // Example using fetch
-fetch('https://api.dev.fun/stats/apps')
+fetch('https://app.dev.fun/api/stats/apps')
   .then(response => response.json())
   .then(data => console.log(data))
   .catch(error => console.error('Error:', error));
@@ -500,13 +500,13 @@ fetch('https://api.dev.fun/stats/apps')
 
 ```bash
 # Example using curl
-curl -X GET https://api.dev.fun/stats/devs
+curl -X GET https://app.dev.fun/api/stats/devs
 ```
 
 ---
 
 <div align="center">
-  <p>© 2024 DevFun Organization. All rights reserved.</p>
+  <p>© 2024 dev.fun Organization. All rights reserved.</p>
   <p>
     <a href="https://dev.fun">Website</a> •
     <a href="https://api.dev.fun/docs">API Documentation</a> •
