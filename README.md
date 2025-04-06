@@ -1,4 +1,4 @@
-# dev.fun Stats API
+# dev.fun stats API
 
 <div align="center">
   <img src="https://img.shields.io/badge/Status-Live-brightgreen" alt="Status: Live">
