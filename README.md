@@ -88,7 +88,7 @@ https://app.dev.fun/api/stats/devs/:uniqueId
 > Returns a paginated list of developers on the platform
 
 ```http
-https://b-app.dev.fun/api/stats/devs/list?page=1?limit=20
+https://app.dev.fun/api/stats/devs/list?page=1?limit=20
 ```
 
 | Parameter | Type | Default | Description |
