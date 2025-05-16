@@ -308,13 +308,15 @@ https://dev.fun/api/stats/coins
 > Returns a paginated list of coins/tokens
 
 ```http
-https://dev.fun/api/stats/coins/list?page=1?limit=20
+https://dev.fun/api/stats/coins/list?page=1&limit=20&order=created&native=true
 ```
 
 | Parameter | Type | Default | Description |
 |-----------|------|---------|-------------|
 | `page` | number | 1 | Page number |
 | `limit` | number | 20 | Number of items per page |
+| `order` | string | (empty) | Order of coins. Can be 'created' (sorts by creation date desc) or empty (sorts by 24h volume desc, then creation date desc). |
+| `native` | string | (empty) | Filters for native dev.fun coins if 'true'. |
 
 **Response**
 ```json
